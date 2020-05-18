@@ -15,7 +15,7 @@ namespace AppSettingsYamlTest.Tests
         {
             IConfigurationBuilder config = new ConfigurationBuilder()
                .SetBasePath(AppContext.BaseDirectory)
-               .AddJsonFile("appsettings.json");
+               .AddJsonFile("appsettings2.json");
             Configuration = config.Build();
         }
 
