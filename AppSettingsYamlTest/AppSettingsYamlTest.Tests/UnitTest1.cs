@@ -31,7 +31,7 @@ namespace AppSettingsYamlTest.Tests
         public void ShouldFailLocally()
         {
 
-            Assert.AreEqual("2020 is the worst year", Configuration["AppSettings:MySecret"]);
+            Assert.AreEqual("2020 is the worst year", Configuration["AppSettings:MySecret2"]);
         }
     }
 }
