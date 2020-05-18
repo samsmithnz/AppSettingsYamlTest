@@ -20,7 +20,7 @@ jobs:
     - name: App Settings Variable Substitution
       uses: microsoft/variable-substitution@v1
       with:
-        files: '${{env.DOTNET_ROOT}}/AppSettingsYamlTest/AppSettingsYamlTest.Tests/appsettings.json'
+        files: '${{GITHUB_WORKSPACE}}/AppSettingsYamlTest/AppSettingsYamlTest.Tests/appsettings.json'
       env:
         AppSettings.MySecret: "Sam was here"
     - name: Run automated unit and integration tests
