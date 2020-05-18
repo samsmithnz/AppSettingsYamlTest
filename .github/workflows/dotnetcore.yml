@@ -22,8 +22,7 @@ jobs:
       with:
         files: 'AppSettingsYamlTest/AppSettingsYamlTest.Tests/appsettings2.json'
       env:
-        AppSettings.MySecret: "Sam was here"
+        AppSettings.MySecret2: "2020 is the worst year"
     - name: Run automated unit and integration tests
       run: dotnet test AppSettingsYamlTest/AppSettingsYamlTest.Tests/AppSettingsYamlTest.Tests.csproj --configuration Release 
-      env:
-        AppSettings.MySecret2: "2020 is the worst year" 
+
